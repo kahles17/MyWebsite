@@ -1,4 +1,13 @@
-fetch('https://temperature-sensor-calculator.herokuapp.com/simon')
-  .then(response => response.json())
-  .then(data => console.log(data));
-document.getElementById("number").innerHTML = 10;
+function Test(log)
+{
+    document.getElementById("number").innerHTML = log;
+}
+
+const Http = new XMLHttpRequest();
+const url='/simon';
+Http.open("GET", url);
+Http.send();
+answer =Http.responseText
+Http.onreadystatechange = (e) => {
+  Test(Http.responseText);
+}
