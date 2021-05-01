@@ -6,8 +6,6 @@ app = Flask(__name__)
 def respond():
     # Retrieve the name from url parameter
     A = request.args.get("A", None)
-    B = request.args.get("B", None)
-    C = request.args.get("C", None)
 
     response = {}
 
