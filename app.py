@@ -8,7 +8,7 @@ def respond():
     A = request.args.get("A", None)
 
     response = {}
-
+    print(f"got name {name}")
     # Check if user sent a name at all
     if not A:
         response["ERROR"] = "no parameter found, please send a parameter"
