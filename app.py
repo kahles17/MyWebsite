@@ -17,7 +17,7 @@ def respond():
         response["ERROR"] = "name must be numeric."
     # Now the user entered a valid name
     else:
-        response["A"] = f"{A}"
+        response["A"] = f"Hallo {A}"
 
     # Return the response in json format
     return jsonify(response)
