@@ -7,7 +7,7 @@ api = Api(app)
 class API(Resource):
     def get(self,A):
         return {"data":A}
-
+#asdf
 api.add_resource(API,"/api/<int:A>")
 if __name__ == "__main__":
     app.run()
