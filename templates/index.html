@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<script type="text/javascript" async
+  <link rel="stylesheet" href="static/styles.css">
+  <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
+  </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
           extensions: ["tex2jax.js"],
           jax: ["input/TeX", "output/HTML-CSS"],
           tex2jax: {
@@ -16,15 +18,36 @@
           "HTML-CSS": { fonts: ["TeX"] }
         });
       </script>
-<title>Sensorberechnung</title>
-<meta content="charset=utf-8">
+  <title>Sensorberechnung</title>
+  <meta content="charset=utf-8">
 </head>
+
 <body>
-<h3>Enter Steinhart-Hart Parameters</h3>
-A:<input id="A" type="text" style="margin:0px 20px; width:60px">B:<input id="B" type="text" style="margin:0px 20px; width:60px" >C:<input id="C" type="text" style="margin:0px 20px; width:60px">
-<button onclick="DynamicMJ.update()">Confirm Parameters</button>
-<div id="TEX"> 
-</div>
-<script src="static/script.js"></script>
+  <div class="heading">
+    <h3>Willkommen zum Temperatursensor-Rechner</h3>
+  </div>
+  <div class="pageContainer">
+    <div class="sidenav">
+      <div class="sidenavItem">
+        <h5 class="parameter">A:</h5>
+        <input id="A" type="text" class="inputField">
+      </div>
+      <div class="sidenavItem">
+        <h5 class="parameter">B:</h5>
+        <input id="B" type="text" class="inputField">
+      </div>
+      <div class="sidenavItem">
+        <h5 class="parameter">C:</h5>
+        <input id="C" type="text" class="inputField">
+      </div>
+      <button onclick="DynamicMJ.update()">Parameter bestätigen</button>
+    </div>
+    <div class="TEXContainer">
+      <div id="TEX">
+        Hier werden später die Formeln stehen
+      </div>
+    </div>
+  </div>
+  <script src="static/script.js"></script>
 </body>
 </html>
