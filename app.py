@@ -9,7 +9,7 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 def send_email(imagefile):
     msg = EmailMessage()
     msg['subject']='Reporting'
-    msg['From']='webdevgessulat@gmail.com'
+    msg['From']='simon@ayhamcloud.de'
     msg['To']='simon.roehrl01@gmail.com'
     msg.set_content('Bild befindet sich im Anhang')
     imagefile.save("image.png")
