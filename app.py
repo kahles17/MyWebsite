@@ -19,11 +19,15 @@ def send_email(imagefile):
         with open(file,'rb') as f:
             file_data = f.read()
             file_name = f.name
-            print(file_data) 
+            print("file received")
     msg.add_attachment(file_data,maintype='application',subtype='octet-stream',filename=file_name)
-    with smtplib.SMTP_SSL('smtp.gmail.com',465) as smtp:
-        smtp.login("webdevgessulat@gmail.com","wdgfacebook")
+    print("added attachment")
+    with smtplib.SMTP_SSL('mail.ayhamcloud.de',465) as smtp:
+        print("connection to smtp")
+        smtp.login("simon@ayhamcloud.de","Simon$$")
+        print("logged into gmail")
         smtp.send_message(msg)
+        print("sent message")
 
 @app.route('/', methods=['POST'])
 @cross_origin()
