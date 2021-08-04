@@ -7,7 +7,8 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 @app.route('/', methods=['POST'])
 @cross_origin()
 def form():
-    return print(request.data)
+    print(request.data)
+    return 0
 
 
 if __name__ == "__main__":
