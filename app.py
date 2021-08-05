@@ -43,4 +43,4 @@ def form():
     return request.form
 
 if __name__ == "__main__":
-    app.run(debug=True,host="139.162.182.227"
+    app.run()
