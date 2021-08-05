@@ -20,7 +20,7 @@ def send_email(imagefile,html,email):
     imagefile.save("image.png")
 
 
-        with open("image.png",'rb') as f:
+    with open("image.png",'rb') as f:
         file_data = f.read()
         file_name = f.name
         print("file received")
