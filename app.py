@@ -1,40 +1,46 @@
+from email.mime import multipart
 from flask import Flask,request
 from flask_cors import CORS, cross_origin
-import smtplib
-from email.message import EmailMessage
-
+import smtplib,ssl
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email.mime.image import MIMEImage
+sender_email = "webdesign.gessulat@gmail.com"
+password = "nekqlfohadsebjqn"
 app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
-def send_email(imagefile):
-    msg = EmailMessage()
-    msg['subject']='Reporting'
-    msg['From']='simon@ayhamcloud.de'
-    msg['To']='simon.roehrl01@gmail.com'
-    msg.set_content('Bild befindet sich im Anhang')
+def send_email(imagefile,html,email):
+    message = MIMEMultipart("alternative")
+    message['Subject']='Reporting'
+    message['From']='webdesign.gessulat@gmail.com'
+    message['To']=email
+    html = MIMEText(html, "html")
+    message.attach(html)
     imagefile.save("image.png")
-    files = ['image.png']
 
-    for file in files:
-        with open(file,'rb') as f:
-            file_data = f.read()
-            file_name = f.name
-            print("file received")
-    msg.add_attachment(file_data,maintype='application',subtype='octet-stream',filename=file_name)
-    print("added attachment")
-    with smtplib.SMTP_SSL('mail.ayhamcloud.de',465) as smtp:
-        print("connection to smtp")
-        smtp.login("simon@ayhamcloud.de","Simon$$")
-        print("logged into gmail")
-        smtp.send_message(msg)
-        print("sent message")
+
+        with open("image.png",'rb') as f:
+        file_data = f.read()
+        file_name = f.name
+        print("file received")
+        image = MIMEImage(file_data,name=file_name)
+        message.attach(image)
+        context = ssl.create_default_context()
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
+            server.login(sender_email, password)
+            server.sendmail(
+                sender_email, email, message.as_string()
+            )
 
 @app.route('/', methods=['POST'])
 @cross_origin()
 def form():
     imagefile = request.files['imagefile']
-    send_email(imagefile)
+    html = request.form['html']
+    email = request.form['email']
+    send_email(imagefile,html,email)
     return request.form
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,host="139.162.182.227"
