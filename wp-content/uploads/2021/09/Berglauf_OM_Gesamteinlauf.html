@@ -1,0 +1,437 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><TITLE>Ergebnisliste</TITLE>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+<!-- 3.3.7 / 13.07.2021 / 13.07.2021 -->
+<style type="text/css">
+body{ width: 770px;}
+body{ font-family: Arial, Helvetica, sans-serif; font-style: normal;}
+table.body{ width: 770px; border: 0px;}
+td.blGrund{ BACKGROUND: white; FONT-FAMILY: Arial, Helvetia, Sans-Serif;
+FONT-SIZE: 13px; PADDING-LEFT: 0px; COLOR: black; }
+td.KopfZ1{ FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 18px;
+FONT-STYLE: normal; FONT-WEIGHT: bold; TEXT-ALIGN: center;
+Border-TOP: 1px solid black; BORDER-BOTTOM: 0; COLOR: black; PADDING: 0px; }
+td.KopfZ11{ FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 18px;
+FONT-STYLE: normal; FONT-WEIGHT: bold; TEXT-ALIGN: center;
+Border-TOP: 0; BORDER-BOTTOM: 0; COLOR: black; PADDING: 0px; }
+td.KopfZ12{ FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 18px;
+FONT-STYLE: normal; FONT-WEIGHT: bold; TEXT-ALIGN: center;
+Border-TOP: 0; BORDER-BOTTOM: 1px solid black; COLOR: black; PADDING: 0px; }
+td.KopfZ2{ font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal;
+font-weight: bold; text-align: left; border-top: 1px solid black; border-bottom: 0px solid black;
+color: black; padding-top: 7px; padding-bottom: 7px; width: 600px; }
+td.KopfZ21{ font-family: Arial, Helvetica, sans-serif; font-size: 19px; font-style: normal;
+font-weight: bold; text-align: left; border-top: 0px solid black; border-bottom: 0px solid black;
+color: black; padding-top:12px; padding-bottom: 0px; width: 600px; }
+td.Stand{ font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-style: normal;
+font-weight: bold; text-align: right; border-top: 1px solid black; border-bottom: 1px solid black;
+color: black; padding-top: 0px; padding-bottom: 0px; width: 150px; }
+td.FussZ{ font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal;
+font-weight: bold; TEXT-ALIGN: center; border-top: 1px solid black; 
+border-bottom: 1px solid black; padding-top: 5px; width: 770px; }
+td.Erstellt{ font-size:13px;
+font-weight: bold; text-align: left;
+color: black; padding-top: 9px; padding-bottom: 0px; width: 50px; }
+td.AklZ{ font-family: Arial, Helvetia, sans-serif; font-size: 18px; font-style: normal;
+font-weight: bold; text-align: left; border-top: 1px solid black; border-bottom: 0px solid black;
+color: black; padding-top: 5px; padding-bottom: 8px; height: 10px; witdh: 600px; }
+p.Wettb{ font-family: Arial, Helvetica, sans-serif; font-size: 14px;
+font-style: normal; font-weight: bold; text-align: left; padding-top: 0px; padding-bottom: 0px;
+color: black; width: 230px; }
+.blWettb{ font-family: Arial, Helvetica, sans-serif; font-size: 14px;
+font-style: normal; text-align: left; padding-top: 0px; padding-bottom: 0px;
+color: black; width: 330px; }
+.blAKl{ font-family: Arial, Helvetica, sans-serif; font-size: 14px;
+font-style: normal; text-align: left; padding-top: 0px; padding-bottom: 0px;
+color: black; width: 230px; }
+.blBru{ font-family: Arial, Helvetica, sans-serif; font-size: 10px;
+font-style: normal; text-align: right; padding-top: 0px; padding-bottom: 0px;
+color: black; width: 702px; }
+.blNet{ font-family: Arial, Helvetica, sans-serif; font-size: 10px;
+font-style: normal; text-align: right; padding-top: 0px; padding-bottom: 0px;
+color: black; width:  68px; }
+.blZwifrei1w{ font-family: Arial, Helvetica, sans-serif; font-size:11px;
+font-style: normal; TEXT-ALIGN: left; width: 106px; }
+.blZwiTextw{ font-family: Arial, Helvetica, sans-serif; font-size:11px;
+font-style: normal; TEXT-ALIGN: right; width: 42px; }
+.blZwifreiEw{ font-family: Arial, Helvetica, sans-serif; font-size:11px;
+font-style: normal; TEXT-ALIGN: left; width: 300px; }
+.blZwifrei1g{ font-family: Arial, Helvetica, sans-serif; font-size:11px;
+font-style: normal; TEXT-ALIGN: left; width: 106px; }
+td.blZwifrei1g{ background-color: #DDDDDD; }
+.blZwiTextg{ font-family: Arial, Helvetica, sans-serif; font-size:11px;
+font-style: normal; TEXT-ALIGN: right; width: 42px; }
+td.blZwiTextg{ background-color: #DDDDDD; }
+.blZwifreiEg{ font-family: Arial, Helvetica, sans-serif; font-size:11px;
+font-style: normal; TEXT-ALIGN: left; width: 300px; }
+td.blZwifreiEg{ background-color: #DDDDDD; }
+.blRangw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal;
+TEXT-ALIGN: right; padding: 0px; width: 30px; }
+.blRangBw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; WIDTH: 60px; }
+.blStNrw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; WIDTH: 42px; }
+.blNamew{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 5px; width: 233px; }
+.blJGw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: center; padding-left: 0px; width: 30px; }
+.blVereinw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 4px; width: 225px; }
+.blLeistw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; padding-left: 0px; width: 65px; }
+.blVereinMaw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 4px; width: 525px; }
+.blMaFreiw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; width: 140px; }
+.blMaFrei1w{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; width: 86px; }
+.blMaFrei2w{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; width:  20x; }
+.blMaFrei3w{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; width: 350x; }
+.blNameMaw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 8px; width: 270px; }
+.blLeistMaw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; padding-left: 0px; width: 90px; }
+.blVerBer{ font-family: Curier New; font-size: 14px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 0px; width:770px; }
+.blRangg{ font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal;
+TEXT-ALIGN: right; padding: 0px; width: 30px; }
+td.blRangg{ background-color: #DDDDDD; }
+.blRangBg{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; WIDTH: 60px; }
+td.blRangBg{ background-color: #DDDDDD; }
+.blStNrg{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; WIDTH: 42px; }
+td.blStNrg{ background-color: #DDDDDD; }
+.blNameg{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 5px; width: 233px; }
+td.blNameg{ background-color: #DDDDDD; }
+.blJGg{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: center; padding-left: 0px; width: 30px; }
+td.blJGg{ background-color: #DDDDDD; }
+.blVereing{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 4px; width: 225px; }
+td.blVereing{ background-color: #DDDDDD; }
+.blLeistg{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; padding-left: 0px; width: 65px; }
+td.blLeistg{ background-color: #DDDDDD; }
+.blVereinMag{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 4px; width: 525px; }
+td.blVereinMag{ background-color: #DDDDDD; }
+.blMaFreig{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; width: 140px; }
+td.blMaFreig{ background-color: #DDDDDD; }
+.blMaFrei1g{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; width: 86px; }
+td.blMaFrei1g{ background-color: #DDDDDD; }
+.blMaFrei2g{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; width:  20x; }
+td.blMaFrei2g{ background-color: #DDDDDD; }
+.blMaFrei3g{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; width:  195x; }
+td.blMaFrei3g{ background-color: #DDDDDD; }
+.blNameMag{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 8px; width: 270px; }
+td.blNameMag{ background-color: #DDDDDD; }
+.blLeistMag{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; padding-left: 0px; width: 90px; }
+td.blLeistMag{ background-color: #DDDDDD; }
+.blStMaTnw{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 0px; width: 602px; }
+.blStMaTng{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 0px; width: 602px; }
+td.blStMaTng{ background-color: #DDDDDD; }
+.blStMaTnFreiw{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+font-style: normal; TEXT-ALIGN: left; width: 95px; }
+.blStMaTnFreig{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+font-style: normal; TEXT-ALIGN: left; width: 95px; }
+td.blStMaTnFreig{ background-color: #DDDDDD; }
+.blDatumMkT2w{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; width: 40px; }
+.blDatumMkT2g{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; width: 40px; }
+td.blDatumMkT2g{ background-color: #DDDDDD; }
+.blVorjRekFrei{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+font-style: normal; TEXT-ALIGN: left; width: 85px; }
+.blVorjRekBez{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+font-style: normal; TEXT-ALIGN: left; width: 130px; }
+.blVorjRekLeist{ font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal;
+TEXT-ALIGN: left; padding: 0px; width: 50px; }
+.blVorjRekDaten{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 0px; width: 400px; }
+.blRekordDatum{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 0px; width:  50px; }
+td.links { border-left-width: 1px; border-left-style:solid; text-vertical-align : top; }
+td.linksZentriert { border-left-width: 1px; border-left-style:solid; text-align : center; text-vertical-align : top; }
+td.linksOben { border-left-width: 1px; border-left-style:solid; border-top-width: 1px; border-top-style:solid; text-vertical-align : top; }
+td.linksObenZentriert { border-left-width: 1px; border-left-style:solid; border-top-width: 1px; border-top-style:solid; text-align : center; text-vertical-align : top; }
+td.linksObenRechts { border-left-width: 1px; border-left-style:solid; border-top-width: 1px; border-top-style:solid; border-right-width: 1px; border-right-style:solid; text-vertical-align : top; }
+td.linksObenRechtsRechts { border-left-width: 1px; border-left-style:solid; border-top-width: 1px; border-top-style:solid; border-right-width: 1px; border-right-style:solid; text-align : right; text-vertical-align : top; }
+td.rechts { border-right-width: 1px; border-right-style:solid; text-vertical-align : top; }
+td.rechtsZentriert { border-right-width: 1px; border-right-style:solid; text-align : center; text-vertical-align : top; }
+td.linksRechts { border-left-width: 1px; border-left-style:solid; border-right-width: 1px; border-right-style:solid; text-vertical-align : top; }
+td.linksRechtsRechts { border-left-width: 1px; border-left-style:solid; border-right-width: 1px; border-right-style:solid; text-align : right; text-vertical-align : top; }
+td.Oben { border-top-width: 1px; border-top-style:solid; text-vertical-align : top; }
+</style>
+
+</HEAD>
+<br><table class="body" cellspacing="0">
+<tr><td class="KopfZ1">Bezirk Oberpfalz<a NAME="Oberpfalz-Meisterschaft"></a></td></tr>
+<tr><td class="KopfZ11">32. Premberger Sparkassenberglauf mit OM</td></tr>
+<tr><td class="KopfZ12">am 19.09.2021 in Premberg - Premberg Dorfplatz</td></tr>
+</table>
+<table class="body" cellspacing="0">
+<tr><td class="KopfZ1">Oberpfalz-Meisterschaft</td></tr>
+</table>
+<table class="body" cellspacing="0">
+<tr><td class="KopfZ21">Ergebnisliste</td></tr></table>
+<table class="body" cellspacing="0">
+<tr><td class="Erstellt">20.09.2021 / 19:23</td></tr></table><br>
+<table CLASS="body" cellspacing="0"><TBODY>
+<tr><td class="KopfZ2">Wettbewerbübersicht</td></tr>
+<tr><td CLASS="blGrund"><a href="Berglauf_OM_Gesamteinlauf.html#W1Berglauf">Berglauf</a></td></tr>
+</TBODY></table>
+<br>
+<TABLE CLASS="body" cellspacing="0"><TBODY><TR>
+<TD CLASS=AklZ>Berglauf<a NAME=W1Berglauf></a></TD></TR></TBODY></TABLE>
+<table CLASS="body" cellspacing="0" cellpadding="0">
+<tr><td CLASS="blWettb">Berglauf</td>
+<td CLASS="blAKl">Durchlaufwertung männl. Teilnehmer</td>
+</tr></table><br><table CLASS="body" cellspacing="0" cellpadding="0">
+</table><table CLASS="body" cellspacing="0" cellpadding="0">
+<tr><td CLASS="blRangw">1.</td>
+<td CLASS="blAKl">und Oberpalzmeister</td>
+<td CLASS="blMaFrei1w"></td></tr>
+</table><table CLASS="body" cellspacing="0" cellpadding="0">
+<tr><td CLASS="blRangg"></td>
+<td CLASS="blRangBg">/1.   Mä</td>
+<td CLASS="blStNrg">51</td>
+<td CLASS="blNameg">Gleißl, Sebastian</td>
+<td CLASS="blJGg">1999</td>
+<td CLASS="blVereing">LG TELIS FINANZ Regensburg</td>
+<td CLASS="blLeistg">22:51</td>
+</tr>
+<tr><td CLASS="blRangw">2.</td>
+<td CLASS="blRangBw">/2.   Mä</td>
+<td CLASS="blStNrw">42</td>
+<td CLASS="blNamew">Schaller, Michael</td>
+<td CLASS="blJGw">1996</td>
+<td CLASS="blVereinw">TV Burglengenfeld</td>
+<td CLASS="blLeistw">23:33</td>
+</tr>
+<tr><td CLASS="blRangg">3.</td>
+<td CLASS="blRangBg">/1.   U20</td>
+<td CLASS="blStNrg">40</td>
+<td CLASS="blNameg">Fuchs, Michael</td>
+<td CLASS="blJGg">2003</td>
+<td CLASS="blVereing">TV Burglengenfeld</td>
+<td CLASS="blLeistg">25:41</td>
+</tr>
+<tr><td CLASS="blRangw">4.</td>
+<td CLASS="blRangBw">/1.   M30</td>
+<td CLASS="blStNrw">29</td>
+<td CLASS="blNamew">Schwarzensteiner, Kilian</td>
+<td CLASS="blJGw">1990</td>
+<td CLASS="blVereinw">SWC Regensburg</td>
+<td CLASS="blLeistw">25:49</td>
+</tr>
+<tr><td CLASS="blRangg">5.</td>
+<td CLASS="blRangBg">/2.   M30</td>
+<td CLASS="blStNrg">28</td>
+<td CLASS="blNameg">Kinateder, Thomas</td>
+<td CLASS="blJGg">1990</td>
+<td CLASS="blVereing">SWC Regensburg</td>
+<td CLASS="blLeistg">26:04</td>
+</tr>
+<tr><td CLASS="blRangw">6.</td>
+<td CLASS="blRangBw">/1.   U18</td>
+<td CLASS="blStNrw">43</td>
+<td CLASS="blNamew">Sigl, Ludwig</td>
+<td CLASS="blJGw">2005</td>
+<td CLASS="blVereinw">TV Burglengenfeld</td>
+<td CLASS="blLeistw">27:15</td>
+</tr>
+<tr><td CLASS="blRangg">7.</td>
+<td CLASS="blRangBg">/1.   M40</td>
+<td CLASS="blStNrg">8</td>
+<td CLASS="blNameg">Steinberger, Bernhard</td>
+<td CLASS="blJGg">1980</td>
+<td CLASS="blVereing">ASV Cham</td>
+<td CLASS="blLeistg">27:26</td>
+</tr>
+<tr><td CLASS="blRangw">8.</td>
+<td CLASS="blRangBw">/3.   Mä</td>
+<td CLASS="blStNrw">45</td>
+<td CLASS="blNamew">Zeller, Tobias</td>
+<td CLASS="blJGw">1993</td>
+<td CLASS="blVereinw">TV Burglengenfeld</td>
+<td CLASS="blLeistw">28:08</td>
+</tr>
+<tr><td CLASS="blRangg">9.</td>
+<td CLASS="blRangBg">/1.   M50</td>
+<td CLASS="blStNrg">12</td>
+<td CLASS="blNameg">Krebs, Andreas</td>
+<td CLASS="blJGg">1971</td>
+<td CLASS="blVereing">LG TELIS FINANZ Regensburg</td>
+<td CLASS="blLeistg">29:08</td>
+</tr>
+<tr><td CLASS="blRangw">10.</td>
+<td CLASS="blRangBw">/2.   U18</td>
+<td CLASS="blStNrw">37</td>
+<td CLASS="blNamew">Conrad, Maximilian</td>
+<td CLASS="blJGw">2006</td>
+<td CLASS="blVereinw">TV Burglengenfeld</td>
+<td CLASS="blLeistw">29:29</td>
+</tr>
+<tr><td CLASS="blRangg">11.</td>
+<td CLASS="blRangBg">/1.   M35</td>
+<td CLASS="blStNrg">39</td>
+<td CLASS="blNameg">Filchner, Philipp</td>
+<td CLASS="blJGg">1983</td>
+<td CLASS="blVereing">TV Burglengenfeld</td>
+<td CLASS="blLeistg">29:38</td>
+</tr>
+<tr><td CLASS="blRangw">12.</td>
+<td CLASS="blRangBw">/1.   M60</td>
+<td CLASS="blStNrw">27</td>
+<td CLASS="blNamew">Bayerl, Georg</td>
+<td CLASS="blJGw">1960</td>
+<td CLASS="blVereinw">SWC Regensburg</td>
+<td CLASS="blLeistw">29:40</td>
+</tr>
+<tr><td CLASS="blRangg">13.</td>
+<td CLASS="blRangBg">/2.   M50</td>
+<td CLASS="blStNrg">36</td>
+<td CLASS="blNameg">Petraschek, Erwin</td>
+<td CLASS="blJGg">1969</td>
+<td CLASS="blVereing">TSV Alteglofsheim</td>
+<td CLASS="blLeistg">29:41</td>
+</tr>
+<tr><td CLASS="blRangw">14.</td>
+<td CLASS="blRangBw">/2.   M40</td>
+<td CLASS="blStNrw">34</td>
+<td CLASS="blNamew">Müller, Achim</td>
+<td CLASS="blJGw">1978</td>
+<td CLASS="blVereinw">Ski-Club Schwandorf</td>
+<td CLASS="blLeistw">31:03</td>
+</tr>
+<tr><td CLASS="blRangg">15.</td>
+<td CLASS="blRangBg">/1.   M55</td>
+<td CLASS="blStNrg">16</td>
+<td CLASS="blNameg">Schleicher, Wolfgang</td>
+<td CLASS="blJGg">1966</td>
+<td CLASS="blVereing">Lauf- und Triathlonverein Naab</td>
+<td CLASS="blLeistg">31:19</td>
+</tr>
+<tr><td CLASS="blRangw">16.</td>
+<td CLASS="blRangBw">/3.   M40</td>
+<td CLASS="blStNrw">10</td>
+<td CLASS="blNamew">Götz, Uli</td>
+<td CLASS="blJGw">1977</td>
+<td CLASS="blVereinw">ATSV Kallmünz</td>
+<td CLASS="blLeistw">32:07</td>
+</tr>
+<tr><td CLASS="blRangg">17.</td>
+<td CLASS="blRangBg">/3.   M50</td>
+<td CLASS="blStNrg">9</td>
+<td CLASS="blNameg">Fuchs, Alfred</td>
+<td CLASS="blJGg">1968</td>
+<td CLASS="blVereing">ATSV Kallmünz</td>
+<td CLASS="blLeistg">33:26</td>
+</tr>
+<tr><td CLASS="blRangw">18.</td>
+<td CLASS="blRangBw">/1.   M65</td>
+<td CLASS="blStNrw">53</td>
+<td CLASS="blNamew">Lindhof, Manfred</td>
+<td CLASS="blJGw">1955</td>
+<td CLASS="blVereinw">Ski-Club Schwandorf</td>
+<td CLASS="blLeistw">36:58</td>
+</tr>
+<tr><td CLASS="blRangg">19.</td>
+<td CLASS="blRangBg">/1.   M80</td>
+<td CLASS="blStNrg">32</td>
+<td CLASS="blNameg">Biedermann, Wolfgang</td>
+<td CLASS="blJGg">1940</td>
+<td CLASS="blVereing">Ski-Club Schwandorf</td>
+<td CLASS="blLeistg">57:57</td>
+</tr>
+</table><br><table CLASS="body" cellspacing="0" cellpadding="0">
+<tr><td CLASS="blWettb">Berglauf</td>
+<td CLASS="blAKl">Durchlaufwertung weibl. Teilnehmer</td>
+</tr></table><br><table CLASS="body" cellspacing="0" cellpadding="0">
+</table><table CLASS="body" cellspacing="0" cellpadding="0">
+<tr><td CLASS="blRangw">1.</td>
+<td CLASS="blAKl">und Oberpfalzmeisterin</td>
+<td CLASS="blMaFrei1w"></td></tr>
+</table><table CLASS="body" cellspacing="0" cellpadding="0">
+<tr><td CLASS="blRangg"></td>
+<td CLASS="blRangBg">/1.   W40</td>
+<td CLASS="blStNrg">14</td>
+<td CLASS="blNameg">Haberl, Eva</td>
+<td CLASS="blJGg">1980</td>
+<td CLASS="blVereing">LG TELIS FINANZ Regensburg</td>
+<td CLASS="blLeistg">28:22</td>
+</tr>
+<tr><td CLASS="blRangw">2.</td>
+<td CLASS="blRangBw">/1.   W35</td>
+<td CLASS="blStNrw">30</td>
+<td CLASS="blNamew">Witzel, Lisa</td>
+<td CLASS="blJGw">1986</td>
+<td CLASS="blVereinw">SWC Regensburg</td>
+<td CLASS="blLeistw">29:07</td>
+</tr>
+<tr><td CLASS="blRangg">3.</td>
+<td CLASS="blRangBg">/1.   W50</td>
+<td CLASS="blStNrg">15</td>
+<td CLASS="blNameg">Staiger, Bettina</td>
+<td CLASS="blJGg">1968</td>
+<td CLASS="blVereing">LG TELIS FINANZ Regensburg</td>
+<td CLASS="blLeistg">32:25</td>
+</tr>
+<tr><td CLASS="blRangw">4.</td>
+<td CLASS="blRangBw">/1.   Fr</td>
+<td CLASS="blStNrw">50</td>
+<td CLASS="blNamew">Roidl, Emma</td>
+<td CLASS="blJGw">1998</td>
+<td CLASS="blVereinw">TV Burglengenfeld</td>
+<td CLASS="blLeistw">32:33</td>
+</tr>
+<tr><td CLASS="blRangg">5.</td>
+<td CLASS="blRangBg">/2.   W40</td>
+<td CLASS="blStNrg">48</td>
+<td CLASS="blNameg">Mittermeier, Pamela</td>
+<td CLASS="blJGg">1978</td>
+<td CLASS="blVereing">TV Burglengenfeld</td>
+<td CLASS="blLeistg">33:57</td>
+</tr>
+<tr><td CLASS="blRangw">6.</td>
+<td CLASS="blRangBw">/3.   W40</td>
+<td CLASS="blStNrw">46</td>
+<td CLASS="blNamew">Huf, Meike</td>
+<td CLASS="blJGw">1979</td>
+<td CLASS="blVereinw">TV Burglengenfeld</td>
+<td CLASS="blLeistw">35:29</td>
+</tr>
+<tr><td CLASS="blRangg">7.</td>
+<td CLASS="blRangBg">/4.   W40</td>
+<td CLASS="blStNrg">49</td>
+<td CLASS="blNameg">Ostfalk, Stefanie</td>
+<td CLASS="blJGg">1980</td>
+<td CLASS="blVereing">TV Burglengenfeld</td>
+<td CLASS="blLeistg">36:02</td>
+</tr>
+<tr><td CLASS="blRangw">8.</td>
+<td CLASS="blRangBw">/2.   Fr</td>
+<td CLASS="blStNrw">47</td>
+<td CLASS="blNamew">Klenk, Miriam</td>
+<td CLASS="blJGw">1996</td>
+<td CLASS="blVereinw">TV Burglengenfeld</td>
+<td CLASS="blLeistw">37:00</td>
+</tr>
+</table>
+<br><table CLASS="body" cellspacing="1"><tr>
+<td CLASS="FussZ">Erstellt mit COSA WIN 3.3.7  --  COSA-Software,
+Berggartenstr. 5a, D-38271 Baddeckenstedt<BR>eMail: <a href="../../../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="a6d4c3c8dccfc3d5c9c0d2e6c7c9ca88c5c9cb">[email&#160;protected]</a> Home-PAGE: <A CLASS="cosa" href="http://www.cosa-software.de"
+target="_blank">www.cosa-software.de</A><BR>Lizenz für: BY/3205  TV 1875 Burglengenfeld</td>
+</tr></table><script data-cfasync="false" src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></BODY></HTML>
